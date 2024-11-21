@@ -1,4 +1,4 @@
-﻿namespace ETLDaraWarehouse.Entities.DWH;
+﻿namespace DWHNorthwindOrders.Entities.DWH;
 
 public class DimSupplier
 {

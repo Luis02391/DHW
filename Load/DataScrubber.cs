@@ -1,10 +1,12 @@
-﻿namespace ETLDaraWarehouse
+﻿using DWHNorthwindOrders.Context;
+
+namespace DWHNorthwindOrders.Load
 {
     public class DataScrubber
     {
-        private readonly DbContextDWH _contextDwh;
+        private readonly DbContextDwh _contextDwh;
 
-        public DataScrubber(DbContextDWH contextDwh)
+        public DataScrubber(DbContextDwh contextDwh)
         {
             _contextDwh = contextDwh;
         }

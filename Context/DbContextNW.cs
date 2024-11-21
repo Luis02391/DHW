@@ -1,13 +1,11 @@
-﻿
-
-using ETLDaraWarehouse.Entities.North;
+﻿using DWHNorthwindOrders.Entities.North;
 using Microsoft.EntityFrameworkCore;
 
-namespace ETLDaraWarehouse
+namespace DWHNorthwindOrders.Context
 {
-    public class DbContextNW : DbContext
+    public class DbContextNw : DbContext
     {
-        public DbContextNW(DbContextOptions<DbContextNW> options) : base(options) { }
+        public DbContextNw(DbContextOptions<DbContextNw> options) : base(options) { }
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Employee> Employees { get; set; }

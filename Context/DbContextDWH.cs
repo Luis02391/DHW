@@ -1,18 +1,13 @@
-﻿using ETLDaraWarehouse.Entities.DWH;
+﻿using DWHNorthwindOrders.Entities.DWH;
+using DWHNorthwindOrders.Entities.North;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ETLDaraWarehouse.Entities.North;
 
-namespace ETLDaraWarehouse
+namespace DWHNorthwindOrders.Context
 {
 
-    public class DbContextDWH : DbContext
+    public class DbContextDwh : DbContext
     {
-        public DbContextDWH(DbContextOptions<DbContextDWH> options) : base(options) { }
+        public DbContextDwh(DbContextOptions<DbContextDwh> options) : base(options) { }
 
         
         public DbSet<DimEmployee> DimEmployees { get; set; }

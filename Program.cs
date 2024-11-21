@@ -1,4 +1,6 @@
-﻿using ETLDaraWarehouse;
+﻿using DWHNorthwindOrders;
+using DWHNorthwindOrders.Context;
+using DWHNorthwindOrders.Load;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,20 +18,20 @@ class Program
 
         // Configuración del contenedor de dependencias
         var services = new ServiceCollection();
-        services.AddDbContext<DbContextNW>(options =>
+        services.AddDbContext<DbContextNw>(options =>
             options.UseSqlServer(northwindConnectionString));
-        services.AddDbContext<DbContextDWH>(options =>
+        services.AddDbContext<DbContextDwh>(options =>
             options.UseSqlServer(dataWarehouseConnectionString));
 
         var serviceProvider = services.BuildServiceProvider();
         
-        var cleaner = new DataScrubber(serviceProvider.GetService<DbContextDWH>());
+        var cleaner = new DataScrubber(serviceProvider.GetService<DbContextDwh>());
         cleaner.CleanDimensions();
 
 
         var etlProcessor = new OperationHandler(
-            serviceProvider.GetService<DbContextNW>(),
-            serviceProvider.GetService<DbContextDWH>());
+            serviceProvider.GetService<DbContextNw>(),
+            serviceProvider.GetService<DbContextDwh>());
         
         etlProcessor.LoadDimCustomers();
         etlProcessor.LoadEmployees();

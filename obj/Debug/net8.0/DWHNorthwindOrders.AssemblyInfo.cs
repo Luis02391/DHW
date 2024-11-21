@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DWHNorthwindOrders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2154e9bafef8836fb800fbc80759e0082279c5f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("DWHNorthwindOrders")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DWHNorthwindOrders")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

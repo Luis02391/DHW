@@ -5032,11 +5032,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\Electiva\\ETLDataWarehouse\\DWHNorthwindOrders\\DWHNorthwindOrders.csproj",
+      "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\Electiva\\DWHNorthwindOrders\\DWHNorthwindOrders\\DWHNorthwindOrders.csproj",
       "projectName": "DWHNorthwindOrders",
-      "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\Electiva\\ETLDataWarehouse\\DWHNorthwindOrders\\DWHNorthwindOrders.csproj",
+      "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\Electiva\\DWHNorthwindOrders\\DWHNorthwindOrders\\DWHNorthwindOrders.csproj",
       "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\Electiva\\ETLDataWarehouse\\DWHNorthwindOrders\\obj\\",
+      "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\Electiva\\DWHNorthwindOrders\\DWHNorthwindOrders\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [

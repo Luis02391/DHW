@@ -1,4 +1,4 @@
-﻿namespace ETLDaraWarehouse.Entities.North;
+﻿namespace DWHNorthwindOrders.Entities.North;
 
 public class Supplier
 {

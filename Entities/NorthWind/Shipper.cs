@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETLDaraWarehouse.Entities.North
+namespace DWHNorthwindOrders.Entities.North
 {
     public class Shipper
     {

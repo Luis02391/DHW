@@ -1,13 +1,14 @@
-﻿using ETLDaraWarehouse.Entities.DWH;
+﻿using DWHNorthwindOrders.Context;
+using DWHNorthwindOrders.Entities.DWH;
 
-namespace ETLDaraWarehouse
+namespace DWHNorthwindOrders.Load
 {
     public class OperationHandler
     {
-        private readonly DbContextNW _dbContextNw;
-        private readonly DbContextDWH _dbContextDwh;
+        private readonly DbContextNw _dbContextNw;
+        private readonly DbContextDwh _dbContextDwh;
 
-        public OperationHandler(DbContextNW dbContextNw, DbContextDWH dbContextDwh)
+        public OperationHandler(DbContextNw dbContextNw, DbContextDwh dbContextDwh)
         {
             _dbContextNw = dbContextNw;
             _dbContextDwh = dbContextDwh;
